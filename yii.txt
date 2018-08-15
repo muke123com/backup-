@@ -1,0 +1,13 @@
+安装composer 报错 -> 在php.ini中去掉 extension=php_openssl.dll 这一行开头的注释
+
+composer create-project --prefer-dist yiisoft/yii2-app-basic 项目名
+
+没有vendor -> 执行composer update -> 报错 -> 
+执行 composer global require "fxp/composer-asset-plugin" ->
+继续执行 composer update -> 浏览器打开 -> 
+cookieValidationKey must be configured with a secret key ->
+（╯‵□′）╯ノ┻━┻☆
+config/web.php中 'cookieValidationKey' => '随便什么值'
+
+
+页面取值: $user(对象)->name(属性)   
